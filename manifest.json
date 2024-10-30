@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "AI Humanizer",
+    "version": "1.0",
+    "description": "Humanizes AI-generated text directly in Google Docs and Gmail.",
+    "permissions": ["scripting", "activeTab", "storage"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://docs.google.com/*", "https://mail.google.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "host_permissions": ["https://api.undetectable.ai/"]
+  }
