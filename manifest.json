@@ -5,8 +5,7 @@
     "description": "Humanizes AI-generated text directly in Google Docs and Gmail.",
     "permissions": ["scripting", "activeTab", "storage"],
     "action": {
-      "default_popup": "popup.html",
-      "default_icon": "icon.png"
+      "default_popup": "popup.html"
     },
     "content_scripts": [
       {
