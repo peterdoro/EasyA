@@ -4,9 +4,6 @@
     "version": "1.0",
     "description": "Humanizes AI-generated text directly in Google Docs and Gmail.",
     "permissions": ["scripting", "activeTab", "storage"],
-    "background": {
-      "service_worker": "background.js"
-    },
     "action": {
       "default_popup": "popup.html",
       "default_icon": "icon.png"
@@ -17,5 +14,6 @@
         "js": ["content.js"]
       }
     ],
-    "host_permissions": ["https://api.undetectable.ai/"]
+    "host_permissions": ["https://api.undetectable.ai/*"]
   }
+  
